@@ -1,6 +1,7 @@
 package com.example.testhackathon;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -11,8 +12,22 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.testhackathon.databinding.ActivityMainBinding;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.core.View;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
+
+    private static final String KEY_TITLE = "title";
+    private static final String KEY_DESCRIPTION = "description";
+
+    private EditText editTextTitle;
+    private EditText editTextDescription;
+
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     private ActivityMainBinding binding;
 
@@ -32,5 +47,14 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+        editTextTitle = findViewById(R.id.edit_text_title);
+        editTextDescription= findViewById(R.id.edit_text_description);
+    }
+    public void saveNote(View v ){
+        String title = editTextTitle.getText().toString();
+        String descripcion = editTextDescription.getText().toString();
+
+        Map<String, Object> note = new HashMap<>();
+        note.put()
     }
 }
