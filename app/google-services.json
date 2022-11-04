@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "545212950286",
+    "project_id": "hacknayar",
+    "storage_bucket": "hacknayar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545212950286:android:341b80b0d658de23f3595f",
+        "android_client_info": {
+          "package_name": "com.example.testhackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545212950286-89fh04b8976s5a9tht54qsu44g2ip2i1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy-gLE0fHuzk1xQvNXe0Xa3L58PyhZCng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545212950286-89fh04b8976s5a9tht54qsu44g2ip2i1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
